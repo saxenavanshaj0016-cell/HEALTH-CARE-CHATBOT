@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Healthcare Chatbot</title>
+  <style>
+    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+      background-image: url('https://static.vecteezy.com/system/resources/thumbnails/034/637/934/small_2x/a-futuristic-robotic-doctor-in-a-doctor-s-coat-with-a-stethoscope-on-a-blue-background-concept-of-advanced-medical-technology-ai-generative-photo.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      backdrop-filter: brightness(0.9);
+    }
+
+    
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-bottom: 2px solid #e0e0e0;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+
+    header h2 {
+      font-size: 1.2em;
+      color: #444444;
+      font-weight: normal;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+
+    
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .get-started,
+    .try-demo {
+      padding: 12px 25px;
+      font-size: 1em;
+      margin: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .get-started {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+    }
+
+    .get-started:hover {
+      background-color: #0056b3;
+    }
+
+    .try-demo {
+      background-color: white;
+      color: #007BFF;
+      border: 2px solid black;
+      font-weight: bold;
+    }
+
+    .try-demo:hover {
+      background-color: #f0f0f0;
+    }
+
+    
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+    }
+
+    
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .feature-box {
+      flex: 1 1 250px;
+      background-color: #f5f5f5;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: left;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .feature-box h4 {
+      margin-top: 0;
+      color: #007BFF;
+    }
+
+    .feature-box p {
+      margin: 10px 0 0;
+      color: #555;
+    }
+
+    
+    .about {
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      padding: 30px;
+      margin-top: 40px;
+    }
+
+    .about h3 {
+      color: #000000;
+    }
+
+    .about p {
+      color: #555555;
+    }
+
+    
+    .contact {
+      background-color: #f5f5f5;
+      border-radius: 10px;
+      padding: 30px;
+      margin-top: 40px;
+      color: #444;
+      text-align: left;
+    }
+
+    .contact h3 {
+      color: #000;
+      margin-top: 0;
+    }
+
+    .contact p {
+      margin: 8px 0;
+    }
+
+    
+    footer {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 15px;
+      color: #555555;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+
+    
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      header h2 {
+        font-size: 1em;
+      }
+
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .get-started,
+      .try-demo {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  
+  <header>
+    <div class="hero">
+    <div class="hero-icon">
+      <img src="https://img.freepik.com/premium-vector/health-care-logo_1162301-148.jpg" alt="Health care" class="Healthcare-image" />
+    </div>
+    <h1>Healthcare Chatbot</h1>
+    <h2>Get instant healthcare advice powered by Ai</h2>
+    
+    <div class="buttons">
+      <a href="chat.c" class="get-started">Get Started</a>
+      <a href="demo.c" class="try-demo">Try Demo</a>
+    </div>
+  </header>
+
+  
+  <main>
+
+    
+    <div class="features">
+      <div class="feature-box">
+        <h4>Smart FAQ System</h4>
+        <p>Linked list based FAQ database for quick symptom lookup and healthcare advice.</p>
+      </div>
+
+      <div class="feature-box">
+        <h4>Chat History (Queue)</h4>
+        <p>FIFO Queue structure maintains your complete conversation history in order.</p>
+      </div>
+
+      <div class="feature-box">
+        <h4>Recent Queries (Stack)</h4>
+        <p>LIFO Stack structure tracks your recent searches for quick references.</p>
+      </div>
+    </div>
+
+    
+    <div class="about">
+      <h3>About Us</h3>
+      <p>We are a team of students passionate about using technology to make healthcare more accessible. Our project aims to demonstrate how a chatbot interface can provide basic health guidance and awareness.</p>
+      <p><strong>Note:</strong> This chatbot is for educational purposes only and does not replace professional medical advice.</p>
+    </div>
+
+    
+    <div class="contact">
+      <h3>Contact Us</h3>
+      <p>If you have questions, suggestions, or want to reach out, feel free to contact us.</p>
+      <p>Have questions or need support? Reach out to us anytime at
+        <a href="mailto:rudrakshtyagi296@gmail.com">support@healthcare.com</a>.
+      </p>
+      <p><strong>Phone:</strong> +91-98xxxxxx10</p>
+      <p><strong>Feedback:</strong> We're students building this for learning — your feedback helps us improve!</p>
+    </div>
+
+  </main>
+
+  
+  <footer>
+    &copy; 2025 Healthcare Chatbot Project | Built by Students for Learning
+  </footer>
+
+</body>
+</html>
